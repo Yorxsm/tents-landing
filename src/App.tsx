@@ -128,7 +128,7 @@ const AppContent = () => {
         duration: 0.8
       }} className="mb-16 text-center">
           <h2 className={`text-2xl mb-4 font-bangers tracking-wider ${theme === 'dark' ? 'text-blue-300' : 'text-blue-600'}`}>
-            LAUNCHING ON
+            LAUNCHING IN
           </h2>
           <Countdown targetDate="2025-10-30T12:00:00Z" />
         </motion.div>
