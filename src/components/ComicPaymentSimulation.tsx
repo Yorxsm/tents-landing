@@ -101,7 +101,7 @@ export const ComicPaymentSimulation: React.FC = () => {
                   {currentStep === 3 ? <CheckCircleIcon size={48} /> : <WalletIcon size={48} />}
                 </motion.div>
               </motion.div>
-              <p className="text-center mt-2 font-comic">Sam</p>
+              <p className="text-center mt-2 font-comic">CZ</p>
             </motion.div>
             {/* Middle Action */}
             <motion.div className="w-1/3 flex flex-col items-center order-2" animate={{
