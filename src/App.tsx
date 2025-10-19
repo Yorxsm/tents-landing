@@ -130,12 +130,28 @@ const AppContent = () => {
           <h2 className={`text-2xl mb-4 font-bangers tracking-wider ${theme === 'dark' ? 'text-blue-300' : 'text-blue-600'}`}>
             LAUNCHING IN
           </h2>
-          <Countdown targetDate="2025-10-30T12:00:00Z" />
+          <Countdown targetDate="2025-11-01T12:00:00Z" />
         </motion.div>
         {/* Visitor counter */}
         <VisitorCounter count={visitorCount} />
         {/* Link Preview */}
-        
+        <motion.div className="my-12" initial={{
+        opacity: 0,
+        y: 20
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        delay: 0.4
+      }}>
+          <div className="flex items-center justify-center mb-4">
+            <LinkIcon className={`mr-2 ${theme === 'dark' ? 'text-blue-400' : 'text-blue-500'}`} size={20} />
+            <h2 className={`text-2xl font-bangers tracking-wider ${theme === 'dark' ? 'text-blue-300' : 'text-blue-600'}`}>
+              PROJECT PREVIEW
+            </h2>
+          </div>
+          {/* <LinkPreview url="https://tents.finance" /> */}
+        </motion.div>
         {/* Game area */}
         <motion.div initial={{
         opacity: 0
