@@ -14,12 +14,12 @@ export const ShareModal: React.FC<ShareModalProps> = ({
     theme
   } = useTheme();
   const treasureMessages = {
-    'what-is-tents': 'I just discovered what TENTS is! A crypto payment gateway powered by NEAR Intents. Join the countdown at tents.finance',
-    volatility: 'Did you know TENTS solves crypto volatility for merchants? I just found this treasure! Check out tents.finance',
-    'wrong-amount': 'TENTS has smart refund logic for wrong payment amounts! Just discovered this at tents.finance',
-    reversible: 'No more chargebacks! TENTS crypto payments are irreversible. Join the hunt at tents.finance',
-    settlements: 'TENTS settlements are instant thanks to NEAR Intents! Found this treasure at tents.finance',
-    integration: 'For merchants TENTS is super easy to integrate with widgets, APIs and SDKs! Join the countdown at tents.finance'
+    'what-is-tents': 'I just discovered what TENTS is! A crypto payment gateway powered by NEAR Intents. Join the countdown at',
+    volatility: 'Did you know TENTS solves crypto volatility for merchants? I just found this treasure! Check out',
+    'wrong-amount': 'TENTS has smart refund logic for wrong payment amounts! Just discovered this at',
+    reversible: 'No more chargebacks! TENTS crypto payments are irreversible. Join the hunt at',
+    settlements: 'TENTS settlements are instant thanks to NEAR Intents! Found this treasure at',
+    integration: 'For merchants TENTS is super easy to integrate with widgets, APIs and SDKs! Join the countdown at'
   };
   const message = treasureMessages[treasureId as keyof typeof treasureMessages] || 'I just found a treasure on the TENTS countdown page! Check it out at tents.finance';
   const shareUrl = window.location.href;
